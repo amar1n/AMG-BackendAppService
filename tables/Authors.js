@@ -11,8 +11,10 @@ table.columns = {
     "surname": "string"
 };
 
-//table.read.access = 'anonymous';
-table.read.access = 'authenticated';
-table.update.access = 'disabled';
+table.read.access = 'anonymous';
+table.update.access = 'authenticated';
+table.delete.access = 'authenticated';
+table.insert.access = 'authenticated';
+//table.update.access = 'disabled';
 
 module.exports = table;
