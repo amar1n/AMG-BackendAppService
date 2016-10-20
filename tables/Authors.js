@@ -16,6 +16,11 @@ table.insert(function (context) {
     return context.execute();
 });
 
+table.read(function (context) {
+    context.query.where( { idUsuario : context.user.id } );
+    return context.execute();
+});
+
 table.read.access = 'anonymous';
 table.update.access = 'authenticated';
 table.delete.access = 'authenticated';
