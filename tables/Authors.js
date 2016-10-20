@@ -12,7 +12,7 @@ table.columns = {
 };
 
 table.insert(function (context) {
-    table.item.idUsuario = context.user.id;
+    context.item.idUsuario = context.user.id;
     return context.execute();
 });
 
