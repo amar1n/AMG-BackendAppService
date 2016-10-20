@@ -11,4 +11,7 @@ table.columns = {
     "surname": "string"
 };
 
+table.read.access = 'anonymous';
+table.update.access = 'disabled';
+
 module.exports = table;
