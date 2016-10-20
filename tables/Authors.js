@@ -11,6 +11,8 @@ table.columns = {
     "surname": "string"
 };
 
+table.dynamicSchema = false;
+
 table.insert(function (context) {
     context.item.idUsuario = context.user.id;
     return context.execute();
