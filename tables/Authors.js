@@ -11,6 +11,11 @@ table.columns = {
     "surname": "string"
 };
 
+table.insert(function (context) {
+    table.item.idUsuario = context.user.id;
+    return context.execute();
+});
+
 table.read.access = 'anonymous';
 table.update.access = 'authenticated';
 table.delete.access = 'authenticated';
